@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JAG | Just Another Guardian at Place</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<header class="header">
+<div class="brand">JAG</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#demo">SOC</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+ 
+<section id="home" class="hero">
+<div class="hero-layer"></div>
+<div class="hero-content">
+<h1>Just Another Guardian at Place</h1>
+<p>Trusted cyber defense powered by intelligence</p>
+<button>Explore Our Platform</button>
+</div>
+</section>
+ 
+<section id="about" class="about">
+<div class="about-text">
+<h2>About JAG</h2>
+<p>
+            JAG delivers proactive cyber defense, continuous monitoring,
+            and rapid incident response for modern enterprises.
+</p>
+</div>
+<img src="office.jpg" alt="Office">
+</section>
+ 
+<section id="services" class="services">
+<h2>Our Services</h2>
+<div class="service-grid">
+<div class="service-card">
+<img src="service1.jpg">
+<h3>Endpoint Security</h3>
+<p>Real-time protection across devices.</p>
+</div>
+<div class="service-card">
+<img src="service2.jpg">
+<h3>Cloud Security</h3>
+<p>Secure cloud workloads and APIs.</p>
+</div>
+<div class="service-card">
+<img src="service3.jpg">
+<h3>SOC Monitoring</h3>
+<p>24×7 expert threat response.</p>
+</div>
+</div>
+</section>
+ 
+<!-- FIXED GALLERY -->
+<section id="gallery" class="gallery">
+<h2 class="gallery-title">Inside JAG</h2>
+ 
+    <div class="gallery-grid">
+<div class="gallery-item">
+<img src="soc.jpg">
+</div>
+<div class="gallery-item">
+<img src="office.jpg">
+</div>
+<div class="gallery-item">
+<img src="service1.jpg">
+</div>
+<div class="gallery-item">
+<img src="service2.jpg">
+</div>
+</div>
+</section>
+ 
+<section id="demo" class="demo">
+<h2>Live SOC Simulation</h2>
+<button onclick="generateAlert()">Simulate Threat</button>
+<ul id="alerts"></ul>
+</section>
+ 
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+<form onsubmit="return false">
+<input placeholder="Name">
+<input placeholder="Email">
+<textarea placeholder="Message"></textarea>
+<button>Submit</button>
+</form>
+</section>
+ 
+<footer class="footer">
+<p>© 2026 JAG | Academic Project</p>
+</footer>
+ 
+<script>
+function generateAlert(){
+    const alerts = [
+        "Suspicious Login",
+        "Malware Blocked",
+        "Unauthorized Access",
+        "Threat Neutralized"
+    ];
+    const li = document.createElement("li");
+    li.innerText = alerts[Math.floor(Math.random()*alerts.length)]
+        + " — " + new Date().toLocaleTimeString();
+    document.getElementById("alerts").prepend(li);
+}
+</script>
+ 
+</body>
+</html>
