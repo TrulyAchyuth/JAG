@@ -20,7 +20,7 @@ body{
     display:flex;
     justify-content:space-between;
     z-index:100;
-    border-bottom:4px solid #38bdf8;
+    border-bottom:4px double #38bdf8;
 }
  
 .brand{
@@ -209,4 +209,5 @@ input,textarea{
     color:white;
     text-align:center;
     padding:30px;
+
 }
