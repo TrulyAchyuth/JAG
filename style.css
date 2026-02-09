@@ -268,3 +268,9 @@ input,textarea{
   text-align:center;
   padding:30px;
 }
+#bni{
+  background-image:url("back.jpg");
+  z-index:-1;
+  width:100%;
+  padding:10px;
+}
