@@ -105,7 +105,9 @@ button:hover{ transform:translateY(-3px); }
   justify-content:space-between;
   background: transparent;
 }
-
+.about h2{
+  font-size:25px;
+}
 .about img{
   width:45%;
   border-radius:16px;
@@ -279,5 +281,6 @@ input,textarea{
   min-height: 100vh;
   outline: 3px solid gray;
 }
+
 
 
