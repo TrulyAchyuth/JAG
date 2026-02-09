@@ -269,9 +269,9 @@ input,textarea{
   padding:30px;
 }
 #bni{
-  background-image:url("back.jpg.png");
-  z-index:-1;
+  background-image:url("back.png");
   width:100%;
   padding:10px;
 }
+
 
