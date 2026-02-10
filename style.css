@@ -246,16 +246,37 @@ button:hover{
 .contact{
   padding:100px 8%;
   text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.contact h2{
+  margin-bottom:40px;
+}
+
+.contact form{
+  width:100%;
+  max-width:700px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 
 input, textarea{
-  width:60%;
-  padding:14px;
-  margin:12px 0;
-  border-radius:14px;
+  width:100%;
+  padding:16px;
+  margin:15px 0;
+  border-radius:16px;
   border:1px solid rgba(0,0,0,0.1);
-  font-size:15px;
+  font-size:16px;
   transition:0.3s ease;
+  background:#f8f8f8;
+}
+
+textarea{
+  min-height:150px;
+  resize:none;
 }
 
 input:focus, textarea:focus{
@@ -264,16 +285,9 @@ input:focus, textarea:focus{
   box-shadow:0 0 0 4px rgba(2,132,199,0.1);
 }
 
-/* FOOTER */
-.footer{
-  background:#0284c7;
-  color:white;
-  text-align:center;
-  padding:30px;
-}
-
-#bni{
-  background:url("back.png") repeat;
+.contact button{
+  margin-top:20px;
+  align-self:flex-end;
 }
 
 /* SCROLL REVEAL */
@@ -287,3 +301,4 @@ section.active{
   opacity:1;
   transform:translateY(0);
 }
+
