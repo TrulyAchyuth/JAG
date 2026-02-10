@@ -116,21 +116,29 @@
 </footer>
 
 <script>
-function updateClock(){
-  document.getElementById("clock-time").innerText =
-    new Date().toLocaleTimeString();
-}
-setInterval(updateClock,1000);
-updateClock();
+/* Smooth scroll */
+document.querySelectorAll("nav a").forEach(anchor => {
+  anchor.addEventListener("click", function(e){
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href"))
+      .scrollIntoView({behavior:"smooth"});
+  });
+});
 
-function generateAlert(){
-  const alerts = ["Suspicious Login", "Malware Blocked", "Unauthorized Access"];
-  const li = document.createElement("li");
-  li.innerText = alerts[Math.floor(Math.random()*alerts.length)];
-  document.getElementById("alerts").prepend(li);
-}
+/* Scroll reveal animation */
+const revealElements = document.querySelectorAll("section");
+window.addEventListener("scroll", () => {
+  revealElements.forEach(sec => {
+    const top = sec.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100){
+      sec.classList.add("active");
+    }
+  });
+});
 </script>
+
 
 </body>
 </html>
+
 
