@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JAG | Just Another Guardian at Place</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -117,6 +116,20 @@
 </footer>
 
 <script>
+function updateClock(){
+  document.getElementById("clock-time").innerText =
+    new Date().toLocaleTimeString();
+}
+setInterval(updateClock,1000);
+updateClock();
+
+function generateAlert(){
+  const alerts = ["Suspicious Login", "Malware Blocked", "Unauthorized Access"];
+  const li = document.createElement("li");
+  li.innerText = alerts[Math.floor(Math.random()*alerts.length)];
+  document.getElementById("alerts").prepend(li);
+}
+
 /* Smooth scroll */
 document.querySelectorAll("nav a").forEach(anchor => {
   anchor.addEventListener("click", function(e){
@@ -127,20 +140,15 @@ document.querySelectorAll("nav a").forEach(anchor => {
 });
 
 /* Scroll reveal animation */
-const revealElements = document.querySelectorAll("section");
-window.addEventListener("scroll", () => {
-  revealElements.forEach(sec => {
-    const top = sec.getBoundingClientRect().top;
-    if(top < window.innerHeight - 100){
+const sections = document.querySelectorAll("section");
+window.addEventListener("scroll",()=>{
+  sections.forEach(sec=>{
+    if(sec.getBoundingClientRect().top < window.innerHeight - 100){
       sec.classList.add("active");
     }
   });
 });
 </script>
 
-
 </body>
 </html>
-
-
-
