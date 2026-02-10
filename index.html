@@ -6,149 +6,150 @@
   <title>JAG | Just Another Guardian at Place</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="header">
-  <div class="brand">JAG</div>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#demo">SOC</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="brand">JAG</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#demo">SOC</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<div id="live-clock">
-  <span id="clock-time">00:00:00</span>
-</div>
-
-<!-- HERO -->
-<section id="home" class="hero">
-  <div class="hero-layer"></div>
-  <div class="hero-content">
-    <h1>Just Another Guardian at Place</h1>
-    <p>AI-driven cybersecurity for real-time threat detection and response</p>
-    <button>Explore Our Platform</button>
+  <!-- CLOCK -->
+  <div id="live-clock">
+    <span ids="clock-time">00:00:00</span>
   </div>
-</section>
 
-<div id="bni">
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-layer"></div>
 
-<!-- ABOUT -->
-<section id="about" class="about">
-  <div class="about-text">
-    <h2>About JAG</h2>
-    <p><strong>JAG</strong> is an intelligent cybersecurity platform designed to
-      proactively detect, analyze, and respond to cyber threats.</p>
-
-    <ul class="about-points">
-      <li>✔ AI-powered behavioral threat detection</li>
-      <li>✔ Continuous monitoring with real-time alerts</li>
-      <li>✔ SOC-ready enterprise architecture</li>
-      <li>✔ Cloud & on-prem security</li>
-    </ul>
-  </div>
-  <img src="office.jpg" alt="Operations Center">
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="services">
-  <h2>Our Services</h2>
-
-  <div class="service-grid">
-
-    <div class="service-card">
-      <img src="endpoint.jpg" alt="Endpoint Security">
-      <h3>Endpoint Security</h3>
-      <p>Real-time protection across devices and workstations.</p>
+    <div class="hero-content">
+      <h1>Just Another Guardian at Place</h1>
+      <p>AI-driven cybersecurity for real-time threat detection and response</p>
+      <button>Explore Our Platform</button>
     </div>
+  </section>
 
-    <div class="service-card">
-      <img src="cloud.jpg" alt="Cloud Security">
-      <h3>Cloud Security</h3>
-      <p>Secure cloud workloads, APIs, and access points.</p>
-    </div>
+  <!-- BACKGROUND WRAPPER -->
+  <div id="bni">
 
-    <div class="service-card">
-      <img src="soc.jpg" alt="SOC Monitoring">
-      <h3>SOC Monitoring</h3>
-      <p>24×7 security operations and incident response.</p>
-    </div>
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="about-text">
+        <h2>About JAG</h2>
+        <p>
+          <strong>JAG</strong> is an intelligent cybersecurity platform designed to
+          proactively detect, analyze, and respond to cyber threats.
+        </p>
+
+        <ul class="about-points">
+          <li>✔ AI-powered behavioral threat detection</li>
+          <li>✔ Continuous monitoring with real-time alerts</li>
+          <li>✔ SOC-ready enterprise architecture</li>
+          <li>✔ Cloud & on-prem security</li>
+        </ul>
+      </div>
+
+      <img src="office.jpg" alt="Operations Center">
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+
+      <div class="service-grid">
+
+        <div class="service-card">
+          <img src="endpoint.jpg" alt="Endpoint Security">
+          <h3>Endpoint Security</h3>
+          <p>Real-time protection across devices and workstations.</p>
+        </div>
+
+        <div class="service-card">
+          <img src="cloud.jpg" alt="Cloud Security">
+          <h3>Cloud Security</h3>
+          <p>Secure cloud workloads, APIs, and access points.</p>
+        </div>
+
+        <div class="service-card">
+          <img src="soc.jpg" alt="SOC Monitoring">
+          <h3>SOC Monitoring</h3>
+          <p>24×7 security operations and incident response.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery">
+      <h2 class="gallery-title">Inside JAG</h2>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="soc.jpg" alt="SOC Room">
+        </div>
+        <div class="gallery-item">
+          <img src="office.jpg" alt="Office">
+        </div>
+        <div class="gallery-item">
+          <img src="endpoint.jpg" alt="Endpoint Security">
+        </div>
+        <div class="gallery-item">
+          <img src="cloud.jpg" alt="Cloud Security">
+        </div>
+      </div>
+    </section>
 
   </div>
-</section>
 
-<!-- GALLERY -->
-<section id="gallery" class="gallery">
-  <h2 class="gallery-title">Inside JAG</h2>
-  <div class="gallery-grid">
-    <div class="gallery-item"><img src="soc.jpg"></div>
-    <div class="gallery-item"><img src="office.jpg"></div>
-    <div class="gallery-item"><img src="endpoint.jpg"></div>
-    <div class="gallery-item"><img src="cloud.jpg"></div>
-  </div>
-</section>
+  <!-- DEMO -->
+  <section id="demo" class="demo">
+    <h2>Live SOC Simulation</h2>
+    <button onclick="generateAlert()">Simulate Threat</button>
+    <ul id="alerts"></ul>
+  </section>
 
-</div>
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
 
-<!-- DEMO -->
-<section id="demo" class="demo">
-  <h2>Live SOC Simulation</h2>
-  <button onclick="generateAlert()">Simulate Threat</button>
-  <ul id="alerts"></ul>
-</section>
+    <form onsubmit="return false">
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-  <h2>Contact Us</h2>
-  <form onsubmit="return false">
-    <input placeholder="Name">
-    <input placeholder="Email">
-    <textarea placeholder="Message"></textarea>
-    <button>Submit</button>
-  </form>
-</section>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 JAG | Academic Cybersecurity Project</p>
+  </footer>
 
-<footer class="footer">
-  <p>© 2026 JAG | Academic Cybersecurity Project</p>
-</footer>
-
-<script>
-function updateClock(){
-  document.getElementById("clock-time").innerText =
-    new Date().toLocaleTimeString();
-}
-setInterval(updateClock,1000);
-updateClock();
-
-function generateAlert(){
-  const alerts = ["Suspicious Login", "Malware Blocked", "Unauthorized Access"];
-  const li = document.createElement("li");
-  li.innerText = alerts[Math.floor(Math.random()*alerts.length)];
-  document.getElementById("alerts").prepend(li);
-}
-
-/* Smooth scroll */
-document.querySelectorAll("nav a").forEach(anchor => {
-  anchor.addEventListener("click", function(e){
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href"))
-      .scrollIntoView({behavior:"smooth"});
-  });
-});
-
-/* Scroll reveal animation */
-const sections = document.querySelectorAll("section");
-window.addEventListener("scroll",()=>{
-  sections.forEach(sec=>{
-    if(sec.getBoundingClientRect().top < window.innerHeight - 100){
-      sec.classList.add("active");
+  <!-- SCRIPT -->
+  <script>
+    function updateClock() {
+      document.getElementById("clock-time").innerText =
+        new Date().toLocaleTimeString();
     }
-  });
-});
-</script>
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    function generateAlert() {
+      const alerts = ["Suspicious Login", "Malware Blocked", "Unauthorized Access"];
+      const li = document.createElement("li");
+      li.innerText = alerts[Math.floor(Math.random() * alerts.length)];
+      document.getElementById("alerts").prepend(li);
+    }
+  </script>
 
 </body>
 </html>
