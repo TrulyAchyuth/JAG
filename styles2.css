@@ -211,3 +211,47 @@ button:hover {
   line-height: 1.8;
   text-align: center;
 }
+.soc-flex {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* LEFT CONTENT */
+.soc-content {
+  flex: 7;
+}
+
+.soc-content h2 {
+  text-align: left;
+}
+
+.soc-content p {
+  text-align: left;
+  margin: 0;
+}
+
+/* RIGHT IMAGE */
+.soc-image {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.soc-image img {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 900px) {
+  .soc-flex {
+    flex-direction: column;
+  }
+
+  .soc-content h2,
+  .soc-content p {
+    text-align: center;
+  }
+}
