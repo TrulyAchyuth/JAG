@@ -2,7 +2,7 @@
 
 <header class="header">
   <div class="brand">JAG</div>
-  <link rel="stylesheet" href="styles2.css">
+  <link rel="stylesheet" href="styles.css">
   <nav>
     <a href="index.html">Main page</a>
   </nav>
@@ -26,51 +26,91 @@
 
 <!-- SOC -->
 <section id="soc" class="info-section" style="background: linear-gradient(to bottom right, #FDFCFB, #E2D1C3);">
-  <h2>Security Operations Center (SOC)</h2>
-  <p>
-    A Security Operations Center (SOC) is a centralized function responsible for
-    continuously monitoring, detecting, analyzing, and responding to cybersecurity
-    threats across an organization.
-    <br><br>
-    SOC teams work with SIEM systems, threat intelligence, log analysis, and incident
-    response tools to identify attacks such as malware, data breaches, insider threats,
-    and network intrusions in real time.
-    <br><br>
-    <b>SOC exists to reduce detection time, contain damage, and maintain security visibility 24/7.</b>
-  </p>
+  <div class="soc-flex">
+    <div class="soc-content">
+      <h2>Security Operations Center (SOC)</h2>
+      <p>
+        A Security Operations Center (SOC) is a centralized function responsible for
+        continuously monitoring, detecting, analyzing, and responding to cybersecurity
+        threats across an organization.
+        <br><br>
+        SOC teams work with SIEM systems, threat intelligence, log analysis, and incident
+        response tools to identify attacks such as malware, data breaches, insider threats,
+        and network intrusions in real time.
+        <br><br>
+        <b>SOC exists to reduce detection time, contain damage, and maintain security visibility 24/7.</b>
+      </p>
+    </div>
+    <div class="soc-image">
+      <img src="soc-illustration.png" alt="SOC monitoring dashboard illustration">
+    </div>
+
+  </div>
 </section>
 
-<!-- ENDPOINT SECURITY -->
+
 <section id="endpoint" class="info-section" style="background: linear-gradient(to bottom right, #E3FDF5, #FFE6FA);">
-  <h2>Endpoint Security</h2>
-  <p>
-    Endpoint Security protects devices such as laptops, desktops, servers, and mobile
-    devices that connect to an organization’s network.
-    <br><br>
-    Since endpoints are directly used by humans, they are frequent attack targets.
-    Endpoint security solutions include antivirus, EDR/XDR, device control,
-    behavioral analysis, and disk encryption.
-    <br><br>
-    <b>The goal is to stop threats at the device level before they spread.</b>
-  </p>
+  <div class="soc-flex">
+
+    <div class="soc-image">
+      <img src="endpoint-security.png" alt="Endpoint security device protection illustration">
+    </div>
+
+    <!-- LEFT: CONTENT (70%) -->
+    <div class="soc-content">
+      <h2>Endpoint Security</h2>
+      <p>
+        Endpoint Security focuses on protecting devices such as laptops, desktops,
+        servers, and mobile devices that connect to an organization’s network.
+        <br><br>
+        Because endpoints are directly used by humans, they are frequent targets for
+        phishing, malware, ransomware, and credential theft. Endpoint security solutions
+        include antivirus, EDR/XDR, behavioral analysis, device control, and disk
+        encryption.
+        <br><br>
+        <b>The objective is to prevent compromised devices from becoming entry points
+        into the enterprise network.</b>
+      </p>
+    </div>
+
+    <!-- RIGHT: IMAGE (30%) -->
+    
+  </div>
 </section>
+
 
 <!-- CLOUD SECURITY -->
 <section id="cloud" class="info-section" style="background: linear-gradient(to bottom right, #FEF3C7, #FCA5A5);">
-  <h2>Cloud Security</h2>
-  <p>
-    Cloud Security focuses on protecting applications, data, identities, and workloads
-    hosted in cloud environments such as AWS, Azure, and Google Cloud.
-    <br><br>
-    It includes access control (IAM), encryption, secure configurations, container
-    security, API protection, and compliance monitoring.
-    <br><br>
-    Cloud security operates under a shared responsibility model: the provider secures
-    the infrastructure, while the customer secures data, identities, and configurations.
-    <br><br>
-    <b>Cloud Security ensures scalability without sacrificing control or trust.</b>
-  </p>
+  <div class="soc-flex">
+
+    <!-- LEFT: CONTENT (70%) -->
+    <div class="soc-content">
+      <h2>Cloud Security</h2>
+      <p>
+        Cloud Security refers to the technologies, controls, and policies used to
+        protect applications, data, identities, and workloads running in cloud
+        environments such as AWS, Azure, and Google Cloud.
+        <br><br>
+        It includes identity and access management (IAM), encryption, secure network
+        design, workload protection, container security, and continuous configuration
+        monitoring.
+        <br><br>
+        Cloud security operates under a shared responsibility model: cloud providers
+        secure the infrastructure, while customers are responsible for securing data,
+        identities, and configurations.
+        <br><br>
+        <b>Cloud Security enables scalability without losing visibility or control.</b>
+      </p>
+    </div>
+
+    <!-- RIGHT: IMAGE (30%) -->
+    <div class="soc-image">
+      <img src="cloud-security.png" alt="Cloud security architecture illustration">
+    </div>
+
+  </div>
 </section>
+
 <hr>
 <h4>Grafana:<sub>our associate partner</sub></h4>
 <iframe 
@@ -78,7 +118,7 @@
   width="100%"
   height="420"
   style="border-radius:16px;border:none;"
-  >
+  loading="lazy">
 </iframe>
 <br><hr>
 <section style="text-align:center;">
@@ -89,14 +129,6 @@ It does not collect data by itself. <br>It connects to data sources, queries the
 <br>
 <i><q>Think of Grafana as the display + alert layer, not the data producer.</q></i></p>
 </section>
-
-  <footer class="footer">
-  <div class="footer-content">
-    <h3>JAG</h3>
-    <p>Cybersecurity & Real-Time Threat Monitoring</p>
-    <p>© 2026 JAG | Academic Cybersecurity Project</p>
-  </div>
-</footer>
 <script>
     function updateClock() {
       document.getElementById("clock-time").innerText =
