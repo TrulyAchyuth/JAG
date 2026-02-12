@@ -71,7 +71,8 @@ nav a:hover::after{
 /* ================= HERO ================= */
 .hero{
   height:100vh;
-  background-image: linear-gradient(to bottom right, #FD8451, #FFBD6F);
+  
+  background-image:url('back.png');
   display:flex;
   justify-content:center;
   align-items:center;
@@ -286,3 +287,4 @@ textarea{
 .btn:hover {
   background-color: #0056b3;
 }
+
