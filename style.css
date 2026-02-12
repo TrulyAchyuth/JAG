@@ -1,3 +1,4 @@
+/* RESET */
 *{
   margin:0;
   padding:0;
@@ -11,7 +12,7 @@ body{
   scroll-behavior:smooth;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 .header{
   position:fixed;
   width:100%;
@@ -54,7 +55,7 @@ nav a:hover::after{
   width:100%;
 }
 
-/* CLOCK */
+/* ================= CLOCK ================= */
 #live-clock{
   position:fixed;
   top:90px;
@@ -67,14 +68,15 @@ nav a:hover::after{
   color:#0284c7;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 .hero{
   height:100vh;
-  background:url("hero.jpg") center/cover no-repeat;
+  background-image: linear-gradient(to bottom right, #FD8451, #FFBD6F);
   display:flex;
   justify-content:center;
   align-items:center;
   position:relative;
+  
 }
 
 .hero-overlay{
@@ -99,6 +101,7 @@ nav a:hover::after{
   margin-bottom:30px;
 }
 
+/* ================= BUTTON ================= */
 button{
   padding:14px 36px;
   background:#0284c7;
@@ -115,7 +118,7 @@ button:hover{
   box-shadow:0 10px 25px rgba(2,132,199,0.3);
 }
 
-/* SECTIONS */
+/* ================= SECTIONS ================= */
 .section{
   padding:120px 8%;
   opacity:0;
@@ -128,7 +131,7 @@ button:hover{
   transform:translateY(0);
 }
 
-/* ABOUT (BACKGROUND IMAGE ADDED) */
+/* ================= ABOUT ================= */
 .about{
   position:relative;
   display:flex;
@@ -138,7 +141,6 @@ button:hover{
   overflow:hidden;
 }
 
-/* Overlay */
 .about::before{
   content:"";
   position:absolute;
@@ -158,7 +160,7 @@ button:hover{
   box-shadow:0 15px 40px rgba(0,0,0,0.15);
 }
 
-/* SERVICES */
+/* ================= SERVICES ================= */
 .services{
   text-align:center;
 }
@@ -189,7 +191,14 @@ button:hover{
   object-fit:cover;
 }
 
-/* GALLERY */
+/* Make entire card clickable */
+.service-link{
+  text-decoration:none;
+  color:inherit;
+  display:block;
+}
+
+/* ================= GALLERY ================= */
 .gallery{
   text-align:center;
 }
@@ -216,7 +225,7 @@ button:hover{
   transform:scale(1.08);
 }
 
-/* DEMO */
+/* ================= DEMO ================= */
 .demo{
   text-align:center;
   background:linear-gradient(135deg,#e0f2fe,#f5f1e8);
@@ -233,7 +242,7 @@ button:hover{
   box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
-/* CONTACT */
+/* ================= CONTACT ================= */
 .contact{
   text-align:center;
 }
@@ -243,7 +252,8 @@ button:hover{
   margin:auto;
 }
 
-input, textarea{
+input,
+textarea{
   width:100%;
   padding:14px;
   margin:15px 0;
@@ -256,11 +266,23 @@ textarea{
   resize:none;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 .footer{
   background:linear-gradient(135deg,#0284c7,#0369a1);
   color:white;
   text-align:center;
   padding:50px 20px;
   margin-top:80px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0284c7;
+  color: white;
+  text-decoration: none;
+  border-radius:20px;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: #0056b3;
 }
