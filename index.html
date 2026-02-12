@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JAG | Just Another Guardian at Place</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -31,7 +31,7 @@
 <section id="home" class="hero">
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <h1>Just Another Guardian at Place</h1>
+    <h1><u>J</u>ust <u>A</u>nother <u>G</u>uardian at Place</h1>
     <p>Cybersecurity for real-time threat detection and response</p>
     <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
       Explore Platform
@@ -44,48 +44,65 @@
   <div class="about-text">
     <h2>About JAG</h2>
     <p>
-      <strong>JAG</strong> (Just Another Guardian at Place) is an advanced
-      cybersecurity platform developed to monitor, detect, and respond to
-      security threats in real time. The system simulates real-world
-      Security Operations Center (SOC) environments through continuous
-      monitoring, intelligent threat analysis, and automated alerting.
-    </p>
-
+      <strong>JAG</strong> JAG (Just Another Guardian at Place) is an advanced cybersecurity platform designed to monitor, detect, and respond to cyber threats in real time. Built to simulate real-world Security Operations Center (SOC) environments, JAG combines AI-driven behavioral analysis, continuous system monitoring, and centralized log management to deliver intelligent and proactive threat detection. The platform provides automated alerts, incident prioritization, and rapid response capabilities to minimize risk and reduce attack impact. With support for cloud, endpoint, and on-premise infrastructures, JAG offers scalable, enterprise-grade security architecture that ensures complete visibility, faster threat mitigation, and reliable protection against modern cyber threats.   </p>
+    <br>
     <ul>
-      <li>✔ AI-driven behavioral analysis</li>
-      <li>✔ Real-time system & network monitoring</li>
-      <li>✔ Centralized log collection and correlation</li>
+      <li>✔ AI-driven behavioral threat detection</li>
+      <li>✔ Real-time monitoring of systems and networks</li>
+      <li>✔ Centralized log collection and analysis</li>
       <li>✔ SOC-ready enterprise-grade architecture</li>
-      <li>✔ Malware, intrusion & attack detection</li>
-      <li>✔ Cloud, endpoint & on-premise protection</li>
+      <li>✔ Cloud, endpoint & on-premise security coverage</li>
     </ul>
   </div>
 
   <img src="office.jpg" alt="Operations Center">
 </section>
 
-<!-- SERVICES -->
+<!-- SERVICES (REAL INDUSTRY LINKS) -->
 <section id="services" class="section services">
   <h2>Our Services</h2>
 
   <div class="service-grid">
-    <div class="service-card">
-      <img src="endpoint.jpg" alt="Endpoint Security">
-      <h3>Endpoint Security</h3>
-      <p>Real-time protection across devices and workstations.</p>
-    </div>
 
-    <div class="service-card">
-      <img src="cloud.jpg" alt="Cloud Security">
-      <h3>Cloud Security</h3>
-      <p>Secure cloud workloads, APIs, and infrastructure.</p>
-    </div>
+    <!-- Endpoint Security -->
+    <a href="https://www.fortinet.com/resources/cyberglossary/what-is-endpoint-security"
+       class="service-link"
+       target="_blank"
+       rel="noopener noreferrer">
 
-    <div class="service-card">
-      <img src="soc.jpg" alt="SOC Monitoring">
-      <h3>SOC Monitoring</h3>
-      <p>24×7 threat detection and incident response operations.</p>
-    </div>
+      <div class="service-card">
+        <img src="endpoint.jpg" alt="Endpoint Security">
+        <h3>Endpoint Security</h3>
+        <p>Inspired by FORTINET – real-time endpoint threat protection.</p>
+      </div>
+    </a>
+
+    <!-- Cloud Security -->
+    <a href="https://www.fortinet.com/resources/cyberglossary/what-is-cloud-security"
+       class="service-link"
+       target="_blank"
+       rel="noopener noreferrer">
+
+      <div class="service-card">
+        <img src="cloud.jpg" alt="Cloud Security">
+        <h3>Cloud Security</h3>
+        <p>Inspired by FORTINET – securing cloud workloads and APIs.</p>
+      </div>
+    </a>
+
+    <!-- SOC Monitoring -->
+    <a href="https://www.fortinet.com/resources/cyberglossary/what-is-cloud-security"
+       class="service-link"
+       target="_blank"
+       rel="noopener noreferrer">
+
+      <div class="service-card">
+        <img src="soc.jpg" alt="SOC Monitoring">
+        <h3>SOC Monitoring</h3>
+        <p>Inspired by FORTINET – SOC & SIEM based threat monitoring.</p>
+      </div>
+    </a>
+
   </div>
 </section>
 
@@ -100,7 +117,9 @@
     <div class="gallery-item"><img src="jp.jpg"></div>
   </div>
 </section>
-
+  <p align="center">
+	<a href="index2.html" class="btn"><i><b>To Know more</i></a>
+  </p>
 <!-- DEMO -->
 <section id="demo" class="section demo">
   <h2>Live SOC Simulation</h2>
@@ -129,6 +148,7 @@
   </div>
 </footer>
 
+<!-- JS -->
 <script>
 function updateClock() {
   document.getElementById("clock-time").innerText =
